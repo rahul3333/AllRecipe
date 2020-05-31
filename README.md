@@ -1,7 +1,7 @@
 # AllRecipe
  A website to see and add recipes  
    
-##Rrequirements  
+## Rrequirements  
 "body-parser": "^1.19.0",  
 "connect-mongo": "^3.2.0",  
 "cookie-parser": "^1.4.5",  
@@ -20,6 +20,6 @@
 "request": "^2.88.2",  
 "session": "^0.1.0"  
 
-##Steps  
+## Steps  
 1.Install Nodejs and then all other requirements.  
 2.Start the server using the command : nodemon index
