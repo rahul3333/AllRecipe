@@ -1,0 +1,38 @@
+<p>
+
+    <div class="post-comments">
+        <%if(locals.user){%>
+        <form action="/comments/create" method="POST">
+            <div class="md-form w-50">
+                <i class="fas fa-pencil-alt prefix"></i>
+                <textarea name="content" maxlength="440" minlength="1" rows="3" id="comment-content" class="md-textarea form-control" required></textarea>
+                <label for="comment-content" class="font-weight-bold">Write your Review</label>
+            </div>
+            <input type="hidden" name="recipe" value="<%=recipe._id %>">
+            <button type="submit" class="btn blue-gradient btn-md comment-submit" >Add Review</button>
+        </form>
+        <%}%>
+        <div class="recipe-comments-list">
+            <ul id="recipe-comments-<%= recipe._id%>" style="list-style: none;" >
+                <% for(comment of recipe.comments) {%>
+                    <li class="li-comments">
+                        <p>
+                            
+                            <% if(locals.user && locals.user.id==comment.user.id){%>                       
+                            <small style="float: right; padding-right: 0.5rem;">
+                            <a href="/comments/destroy/<%= comment._id%>">Delete Review</a>
+                            </small>
+                            <%}%>
+                            <small class="comment-username">
+                                Reviewed By: <%= comment.user.name %>
+                            </small><br>
+                            <small class="comment-content"> 
+                                <%= comment.content%>
+                            </small>
+                        </p>
+                    </li>
+                <%}%>
+            </ul>
+        </div>
+    </div>
+</p>

@@ -1,0 +1,119 @@
+div>img{
+    height: 12rem;
+    width: 2rem;
+}
+body{
+    background-color: #E6E6E6;
+}
+
+.bg-scrolled{
+    background-color: rgb(238, 176, 69) !important;
+    transition: background-color 1000ms linear;
+}
+
+.text-color{
+    color: rgb(238, 176, 69);
+}
+
+nav a {
+    color: blue !important;
+    font-weight: bold;
+}
+
+.btn-outline-dark:hover {
+    background-color: white !important;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: background-color 500ms linear;
+}
+
+/* .navbar.navbar-default {
+    background-color: #E6E6E6;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+} */
+
+
+
+/* ------------------------------------------ */
+
+section{
+    background-image: linear-gradient(#F4F4F4,#F7F7F7,#FBFBFB, #FDFDFD);
+    margin-bottom: 2rem;
+    padding:1rem;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.cookingline{
+    margin: 1rem 0 0 3.3rem;
+    font-size: 1.3rem;
+}
+
+.happycooking{
+    margin: 1rem 0 0 18.5rem;
+}
+
+.heading-div{
+    color:#4D4D4D;
+}
+
+.chilli{
+    height: 4rem;
+    width: 4rem;
+}
+
+.cookingline2{
+    margin: 0.5rem 0 0 3.3rem;
+    font-size: 1.3rem;
+}
+
+.happycooking2{
+    margin: 1rem 0 0 20.5rem;
+}
+
+.motion{
+    animation: move 0.5s linear infinite alternate;
+    margin-top: 10px;
+}
+
+@keyframes move{
+    0%{
+        transform: translate(5px) ;
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+.click_anchor{
+    color: black;
+    text-decoration: none;
+}
+
+.click_anchor:hover{
+    text-decoration: none;
+}
+
+p.card-text{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+}
+
+.red_icon{
+    color: red;
+}
+
+.black_icon{
+    color: #212529;
+}

@@ -1,0 +1,91 @@
+<div class="container-fluid p-5 text-monospace">
+    <h2 style="text-transform: capitalize;">Chef <%= recipe.author%>'s <%= recipe.name%></h2>
+    <div class="description_div">
+        <h5 class="mt-4"><%=recipe.description%></h5>
+    </div>
+    <div class="pt-5 text-center Recipe_image">
+        <%if(recipe.photo){%>
+                <img src="<%=recipe.photo%>" alt="Recipe's Image" style="overflow: hidden;;margin-top: -1.5rem;border-radius: 5%;position: relative;width: 95%;height:100% ;">
+
+         <%} else if(locals.user.id==recipe.user.id) {%>
+        <form action="/users/updaterecipepic/<%=recipe.id%>" method="post" enctype="multipart/form-data">
+            <i class="fas fa-2x fa-image prefix mt-4"></i>
+            <input type="file" name="photo" placeholder="Profile Picture"> <br> <br> <br>
+            <button type="submit" class="btn btn-primary ">Add Photo</button>
+        </form>
+        <%} else {%>
+            <img src="/images/getImage.jpeg" alt="Recipe's Image" style="overflow: hidden;;margin-top: -1.5rem;border-radius: 5%;position: relative;width: 95%;height:100% ;">            
+            <%}%>
+    </div>
+    <div class="row icon-separator">
+        <div class="inline-block">
+            <i class="fas fa-circle circle_icon"></i> 
+        </div>
+        <hr class="hr-separator">
+    </div>
+    <div class="ingredients mt-4">
+        <h3>Ingredients</h3>
+            <!-- <ul class="list-group">
+                Loop till ingredients ends
+                <li class="list-group-item">
+                    <div class="md-v-line">
+                    </div>
+                    <input type="checkbox" class="list_checkbox">
+                    Ingredient1
+                </li>
+            </ul> -->
+        <div id="ingredients_list" class="table-responsive mt-4">
+                <table class="table table-striped table-bordered table-hover table-dark">
+                    <!-- Loop till ingredients ends -->
+                    <% var i=0; 
+                        while(i < recipe.ingredients.split("\r\n").length){
+                    %>
+                    <tr>
+                        <td class="check-box-column">
+                            <input type="checkbox" class="list_checkbox">
+                        </td>
+                        <td class="font-weight-bold">
+                            <%= recipe.ingredients.split("\r\n")[i]%>
+                        </td>
+                    </tr>
+                    <% i+=1 }%>
+                </table>
+        </div>
+        <div class="row icon-separator">
+            <div class="inline-block">
+                <i class="fas fa-circle circle_icon"></i> 
+            </div>
+            <hr class="hr-separator">
+        </div>
+        <div class="list_directions mt-4">
+            <h3>Directions</h3>
+            <div id="directions" class=" mt-4">
+                <ul class="list-group list-group-flush" style="list-style: none;">
+                    <% var i=0;
+                    while(i < recipe.directions.split("\r\n").length){
+                %>
+                        <li class="direction_list_header">
+                            <input type="checkbox" name="" id="" class="direction_checkbox"> Step <%= i+1 %>
+                        </li>
+                        <li class="list-group-item list-group-item-dark direction_list_directions">
+                            <%= recipe.directions.split("\r\n")[i]%>
+                        </li>
+                <%i+=1}%>
+                </ul>
+         </div>
+        </div>
+    </div>    
+    <div class="row icon-separator">
+        <div class="inline-block">
+            <i class="fas fa-circle circle_icon"></i> 
+        </div>
+        <hr class="hr-separator">
+    </div>
+    
+<h3 class="mt-4">Recipe Reviews</h3>
+    <ul style="list-style: none;">
+       <%- include('comment') -%>
+    </ul>
+</div>
+
+

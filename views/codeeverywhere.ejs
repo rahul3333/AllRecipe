@@ -1,0 +1,39 @@
+<!--Navbar -->
+<nav class="mb-1 navbar navbar-default sticky-top navbar-expand-lg">
+    <a class="navbar-brand" href="#">All Recipe</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/favorites/<%=user.id%>">Favorites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/my_recipe/<%= user.id%>">My Recipes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/add_recipe">Add Recipe</a>
+        </li>
+      </ul>
+      <!-- <ul class="navbar-nav ml-auto nav-flex-icons">
+        <li class="nav-item avatar">
+          <a class="nav-link p-0" href="#">
+            <img src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" class="rounded-circle z-depth-0"
+              alt="avatar image" height="35">
+          </a>
+        </li>
+      </ul> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item mr-3 mt-1"><a style="text-decoration: none;" href="/users/profile/<%= user.id%>"><!--<input type="image" src="<%= user.avatar%>" class="profile_image_navbar" id="profilepic">-->Hello, <%= user.name%></a></li>
+        <li class="nav-item mr-1"><a type="button" href="/users/signout" class="btn-sm btn-outline-dark"> Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--/.Navbar -->

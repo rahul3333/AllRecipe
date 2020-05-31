@@ -1,0 +1,128 @@
+.Recipe_image{
+    border: 3px solid rgb(110, 110, 110); 
+    border-radius: 5%;width: 40%; 
+    margin-top: 2rem;
+    height: 55%;
+}
+
+.icon-separator{
+    position: relative;
+    color: gray;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.hr-separator{
+    position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-color: gray;
+  margin: 0;
+  z-index: 1;
+}
+
+.inline-block{
+    display: inline-block;
+    z-index: 2;
+    padding: 5px 10px;
+}
+
+/* .md-v-line{
+    position: absolute;
+    border-left: 1px solid gray;
+    height: 49px;
+    top:0px;
+    left:54px
+} */
+
+.check-box-column{
+    width: 5px;
+}
+
+.list_checkbox{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+.list_checkbox:hover{
+    cursor: pointer;
+}
+
+#ingredients_list{
+    width: 50%;
+    /* overflow: hidden; */
+}
+
+#directions{
+    width: 50%;
+}
+
+.direction_checkbox{
+    width: 1.1rem;
+    height: 1.1rem;;
+}
+
+.direction_checkbox:hover{
+    cursor: pointer;
+}
+
+.description_div{
+    text-align: justify;
+    float: right;
+    width: 50%;
+    margin-right: 2rem;
+}
+
+.description_div>h5{
+    line-height: 1.8;
+}
+
+.directions_td{
+    text-align: justify;
+}
+
+.direction_list_header{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #0D0D0D;
+    margin-bottom: 1rem;
+}
+
+.direction_list_directions{
+    margin-bottom: 1.7rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    color: #4D4D4D;
+    font-weight: bold;
+}
+
+.li-comments{
+    background-color: #3A3B3C;
+    color: white;
+    width: 40%;
+    border-radius: 2em 2em 2em 2em;
+    padding-left: 1.2rem;
+}
+
+.comment-username{
+    font-weight: 550;
+    font-size: 1.05rem;
+    letter-spacing: 0.07rem;
+    font-family: monospace;
+}
+
+.comment-content{
+    font-family: monospace;
+    letter-spacing: 0.07rem;
+    font-size: 1.1rem;
+}
+
+.comment-submit{
+    font-weight: bold !important;
+    border-color:#3562B6;
+    border-radius: 2em 2em 2em 2em;
+    letter-spacing: 0.075rem !important; 
+    font-size: 0.82rem !important;
+}

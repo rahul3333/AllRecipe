@@ -1,0 +1,28 @@
+<div id="signup_body">
+<div class="container-fluid">
+    <div id="outer_div">
+        <div id="user_signup_details" class="signup_details">
+            <h2 style="color: rgb(53, 52, 52); margin-bottom: 3rem;" >Sign Up</h2>
+            <form action="/users/create_entry" method="POST">
+                <input type="text" name="name" id="signup_name" placeholder="Name" class="text_back" required>
+                <input type="email" name="email" id="signup_email" placeholder="Email" class="text_back1" required>
+                <input type="password" name="password" id="signup_password" placeholder="Password" class="type_password" required>
+                <input type="password" name="confirm_password" id="signup_conf_pass" placeholder="Confirm Password" class="type_password" required>
+                <input type="number" name="phone" id="signup_phone" placeholder="Phone Number" class="text_back" required>
+                <input type="submit" value="Sign Up" class="btn btn-danger btn-block pl-4 pr-5 ml-3 signup_sub">
+            </form>
+        </div>
+
+    <div class="or">OR</div>
+
+
+    <div id="signup_options">
+        <h2 style="color: rgb(53, 52, 52);">Sign In Here!</h2>
+        <a href="/users/auth/google"><button class="signin_gmail" >Log in with Gmail</button></a>
+        <a href=""><button class="signin_facebook">Log in with Facebook</button></a>
+        <a href=""><button class="signin_twitter">Log in with Twitter</button></a>
+  </div>
+    </div>
+
+</div>
+</div>

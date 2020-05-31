@@ -1,0 +1,53 @@
+<div class="container w-50">
+    <div class="card " >
+        <!-- <div class="header info-color">
+            <div class="row d-flex justify-content-center">
+                <h3 class="mb-0 py-2 font-weight-bold">Now Its Your Turn</h3>
+              </div>
+        </div> -->
+        <img src="/images/chefs-hat.png" alt="" class="card-chefimg">
+        <h3 class="text-monospace card-head font-weight-bold">Now It's <span class="card-head-span">Your Turn</span></h3>
+        <div class="card-body mx-4">
+            <form class=" p-5" action="/users/user_recipe" method="POST">     
+               <div class="md-form" style="margin-bottom: 3rem !important;">
+                    <input type="text" name="name" id="recipe_title" class="form-control" required>
+                    <label for="recipe_title" class="font-weight-bold">Your Recipe's Title</label>
+                </div>
+
+                <div class="md-form" style="margin-bottom: 4rem !important;">
+                    <input type="text" name="author" id="recipe_author" class="form-control" required>
+                    <label for="recipe_author" class="font-weight-bold">Recipe By</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea name="description" maxlength="440" minlength="50" id="recipe_description" rows="6" class="md-textarea form-control" required></textarea>
+                    <label for="recipe_description" class="font-weight-bold">About your Recipe</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea id="recipe_ingredients" name="ingredients" class="md-textarea form-control" rows="6" required></textarea>
+                    <label for="recipe_ingredients" class="font-weight-bold">Ingredients</label>
+                  </div>
+
+                  <div class="md-form" style="margin-bottom: 3rem !important;">
+                    <i class="fas fa-pencil-alt prefix"></i>
+                    <textarea id="recipe_directions" name="directions" class="md-textarea form-control" rows="6" required></textarea>
+                    <label for="recipe_directions" class="font-weight-bold">Enter the Directions</label>
+                  </div>
+
+                  <!-- <div class="md-form">
+
+                  </div> -->
+
+                  <!-- <div class="md-form">
+                    <i class="fas fa-image prefix"></i>
+                    <input type="file" name="photo" placeholder="Your Recipe's Image">
+                  </div> -->
+
+                  <button class="btn blue-gradient btn-lg mt-3" type="submit" style="font-weight: bold;border-color:#3562B6;border-radius: 2em 2em 2em 2em;">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
