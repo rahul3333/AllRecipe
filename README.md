@@ -1,7 +1,7 @@
 # AllRecipe
  A website to see and add recipes  
    
-## Rrequirements  
+## Requirements  
 "body-parser": "^1.19.0",  
 "connect-mongo": "^3.2.0",  
 "cookie-parser": "^1.4.5",  
