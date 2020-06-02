@@ -2,7 +2,7 @@
 
     <div class="post-comments">
         <%if(locals.user){%>
-        <form action="/comments/create" method="POST">
+        <form action="/comments/create" method="POST" id="comment-form">
             <div class="md-form w-50">
                 <i class="fas fa-pencil-alt prefix"></i>
                 <textarea name="content" maxlength="440" minlength="1" rows="3" id="comment-content" class="md-textarea form-control" required></textarea>
@@ -12,15 +12,15 @@
             <button type="submit" class="btn blue-gradient btn-md comment-submit" >Add Review</button>
         </form>
         <%}%>
-        <div class="recipe-comments-list">
-            <ul id="recipe-comments-<%= recipe._id%>" style="list-style: none;" >
+        <div class="recipe-comments-list" id="comment-list-container">
+            <ul id="post-comments-<%= recipe._id %>" style="list-style: none;" >
                 <% for(comment of recipe.comments) {%>
-                    <li class="li-comments">
+                    <li class="li-comments" id="comment-<%= comment._id%>">
                         <p>
                             
                             <% if(locals.user && locals.user.id==comment.user.id){%>                       
                             <small style="float: right; padding-right: 0.5rem;">
-                            <a href="/comments/destroy/<%= comment._id%>">Delete Review</a>
+                            <a href="/comments/destroy/<%= comment._id%>" id="delete-link-<%= comment._id%>" onclick="deleteComment('<%= comment._id%>')">Delete Review</a>
                             </small>
                             <%}%>
                             <small class="comment-username">

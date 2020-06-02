@@ -14,7 +14,19 @@ module.exports.create=async function(req,res){
             });
                 recipe.comments.push(comment);
                 recipe.save();
+                if(req.xhr){
+                    console.log('yooooo');
+                    
+                    comment=await comment.populate('user','name').execPopulate();
+                    return res.status(200).json({
+                        data: {
+                            comment: comment
+                        },
+                        message: "Comment Posted"
+                    });
+                }
                 console.log('Comments',recipe.comments[0]);
+                console.log('right here');
                 
                 res.redirect('back')
             }

@@ -8,7 +8,7 @@ router.all('/signin',users_controller.signin);
 router.all('/create_entry',users_controller.create);
 router.all('/add_recipe',passport.checkAuthentication,users_controller.add_recipe);
 router.all('/user_recipe',passport.checkAuthentication,users_controller.user_recipe);
-router.all('/show_recipe/:name',passport.checkAuthentication,users_controller.show_recipe);
+router.all('/show_recipe/:id',passport.checkAuthentication,users_controller.show_recipe);
 // router.all('/show_recipe',passport.checkAuthentication,users_controller.show_recipe_comments);
 router.all('/my_recipe/:id',passport.checkAuthentication,users_controller.my_recipe);
 router.all('/updaterecipepic/:id',passport.checkAuthentication,users_controller.updaterecipepic);

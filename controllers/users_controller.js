@@ -103,7 +103,7 @@ module.exports.user_recipe=(req,res)=>{
 
 module.exports.show_recipe=async(req,res)=>{
     try {
-        let recipe=await Recipe.findOne({name:req.params.name})
+        let recipe=await Recipe.findById({_id:req.params.id})
     .populate('user')
     .populate({
         path:'comments',

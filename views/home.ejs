@@ -509,7 +509,7 @@
                                 <!-- <a href="#!">
                                   <div class="mask rgba-white-slight"></div>
                                 </a> -->
-                                <a type="button" href="/favorites/create/<%=r.name%>" class="btn-floating btn-lg"><i class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a>
+                                <a type="button" href="/favorites/create/<%=r._id%>" class="btn-floating btn-lg"><i class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a>
                               </div>
                         
                               <!--Card content-->
@@ -520,7 +520,7 @@
                                 <!--Text-->
                                 <p class="card-text"><%= r.description%></p>
                                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                                <a href="/users/show_recipe/<%= r.name%>" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
+                                <a href="/users/show_recipe/<%= r._id%>" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
                         
                               </div>
                         

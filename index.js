@@ -13,8 +13,17 @@ const passportGoogle=require('./config/passport-google-oauth2-strategy');
 const MongoStore=require('connect-mongo')(session);
 const layouts=require('express-ejs-layouts');
 
+
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(layouts);
+// app.use('/comments/destroy/:id',function(req,res,next){
+//     console.log('In middleware');
+//       ('Are You Sure You want to Delete the comment').then(()=>{
+//         next();
+//     },()=>{
+//         res.redirect('back');
+//     })
+// })
 
 app.use(express.static('assets'));
 app.use('/uploads',express.static(__dirname+'/uploads'));
