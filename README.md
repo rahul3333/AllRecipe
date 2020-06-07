@@ -22,4 +22,15 @@
 
 ## Steps  
 1.Install Nodejs and then all other requirements.  
-2.Start the server using the command : nodemon index
+2.Start the server using the command : nodemon index  
+
+## Screenshots  
+![](images/homepage1.PNG)  
+![](images/homepage2.PNG)  
+![](images/signup.PNG)  
+![](images/signin.PNG)  
+![](images/homepage3.PNG)  
+![](images/addRecipe.PNG)  
+![](images/favorites.PNG)  
+![](images/shoeRecipe.PNG)  
+![](images/search.PNG)    
