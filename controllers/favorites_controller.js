@@ -47,20 +47,19 @@ module.exports.fav=async function (req,res){
 module.exports.create=async function(req,res){
     try {
     let recipe=await Recipe.findOne({_id:req.params.id});
-    console.log("Recipes",req.params.id);
     
         if(recipe){
             
             let element=await Favorites.findOne({$and:[{user:req.user.id,recipe:req.params.id}]});
             if(element){
-                return res.redirect('/');
+                return res.redirect('back');
             }
                 console.log('In function');
                let fav=await Favorites.create({
                     recipe:recipe._id,
                     user:req.user._id
                     });
-                    return res.redirect('/');   
+                    return res.redirect('back');   
         }
     } catch (err) {
         console.log('Error : ',err);

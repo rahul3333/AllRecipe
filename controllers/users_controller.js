@@ -1,13 +1,14 @@
 const User= require("../models/user");
 const Recipe=require('../models/recipe');
 const Comment=require('../models/comments');
+const db=require('../config/mongoose');
 
 module.exports.signup=(req,res)=>{
     
     if(req.isAuthenticated()){
         return res.redirect('/');
     }
-    res.render('signup',{
+    res.render('new-signup',{
         title:'Sign-Up'
     });
 };
@@ -17,7 +18,7 @@ module.exports.signin=(req,res)=>{
     if(req.isAuthenticated()){
         return res.redirect('/');
     }
-    res.render('signin',{
+    res.render('new-signin',{
         title:'Sign-In'
     });
 };
@@ -103,7 +104,7 @@ module.exports.user_recipe=(req,res)=>{
 
 module.exports.show_recipe=async(req,res)=>{
     try {
-        let recipe=await Recipe.findById({_id:req.params.id})
+        let recipe=await Recipe.findOne({name:req.params.name})
     .populate('user')
     .populate({
         path:'comments',
@@ -192,5 +193,36 @@ module.exports.updaterecipepic=async function(req,res){
     else{
         console.log('Only Author of the recipe is allowed to change the picture...');
         res.redirect('back');
+    }
+}
+
+module.exports.search=async function(req,res){
+    console.log(req.body.search);
+    let search_item=req.body.search;
+    let recipe=await Recipe.find({name:req.body.search});
+    if(recipe.length){
+        res.render('searched_items',{
+            title:'Searched Recipes',
+            recipe:recipe
+        })
+    }
+    else{
+        db.collection("Recipe").createIndex({name: "text",description:"text"});
+        let words=search_item.split(" ");
+        let get_item=new Array(words.length);
+        console.log(words);
+        let record=await Recipe.find({$text: {$search: search_item, $caseSensitive:false}});
+        console.log(record);
+        if(record.length>0){
+            res.render('searched_items_related',{
+                title:'Search Related Items',
+                record:record
+            })
+        }
+        else{
+            res.render('empty_search',{
+                title:'No Results found',
+            })
+        }
     }
 }

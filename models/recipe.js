@@ -12,7 +12,8 @@ const RecipeSchema=new mongoose.Schema({
         type:String
     },
     description:{
-        type:String
+        type:String,
+        text:true
     },
     author:{
         type:String
@@ -30,6 +31,12 @@ const RecipeSchema=new mongoose.Schema({
         {
             type:mongoose.Schema.Types.ObjectId,
             ref:'Comment'
+        }
+    ],
+    likes: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Like'
         }
     ]
 },{

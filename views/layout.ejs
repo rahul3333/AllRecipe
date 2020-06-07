@@ -6,6 +6,7 @@
         <title><%= title%></title>
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
         <!-- Bootstrap core CSS -->
@@ -28,6 +29,9 @@
         <link rel="stylesheet" href="/css/signup.css">
         <link rel="stylesheet" href="/css/add_recipe.css">
         <link rel="stylesheet" href="/css/show_recipe.css">
+        <link rel="stylesheet" href="/css/new_home.css">
+        <link rel="stylesheet" href="/css/new-signin.css">
+        <link rel="stylesheet" href="/css/new-signup.css">
     </head>
 
     <body>
@@ -52,6 +56,13 @@
     </script>
     <script src="/js/iconchange.js"></script>
     <script src="/js/postajax.js"></script>
+    <script src="/js/toggle_likes.js"></script>
+<script>
+    $('.toggle-like-button').each(function(){
+        let self = this;
+        let toggleLike = new ToggleLike(self);
+    });
+</script>
     </body>
 
 </html>

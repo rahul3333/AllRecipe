@@ -509,7 +509,8 @@
                                 <!-- <a href="#!">
                                   <div class="mask rgba-white-slight"></div>
                                 </a> -->
-                                <a type="button" href="/favorites/create/<%=r._id%>" class="btn-floating btn-lg"><i class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a>
+                                <a type="button" class="toggle-like-button btn-floating btn-lg" data-likes="<%= r.likes.length %>" href="/likes/toggle/?id=<%=r._id%>&type=Recipe"><i class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a>
+                              <!-- href="/favorites/create/<%=r._id%> -->
                               </div>
                         
                               <!--Card content-->

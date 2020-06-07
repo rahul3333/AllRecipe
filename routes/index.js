@@ -6,5 +6,6 @@ router.get('/',home_controller.home);
 router.use('/users',require('./users'));
 router.use('/favorites',require('./favorites'));
 router.use('/comments',require('./comments'));
+router.use('/likes', require('./likes'));
 
 module.exports=router;

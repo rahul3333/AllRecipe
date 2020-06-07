@@ -6,7 +6,7 @@ module.exports.home=(req,res)=>{
             return;
         }
         
-    res.render('home',{
+    res.render('new_home',{
         title:'All Recipes',
         recipe:recipe
     });

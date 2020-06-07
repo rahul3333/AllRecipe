@@ -1,0 +1,720 @@
+#editor_picks{
+    width: 20%;
+    margin-top: 2rem;
+    font-weight: bold;
+    word-wrap: normal;
+    display: inline-block;
+    overflow-wrap: break-word;
+}
+
+#some_recipes{
+    width: 50%;
+    position: absolute;
+    left: 26%;
+    top: 101%;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    display: inline-block;
+}
+
+.editor_recipe>img{
+    width: 50%;
+    height: 15%;
+    border-radius: 5%;
+}
+
+.editor_recipe p{
+    color: rgb(70, 70, 70);
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: -5.6rem;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    margin-left: 8.6rem;
+    /* display: inline; */
+}
+
+.big_pic:hover{
+    color: blue;
+}
+.editor-hr-separator{
+    width: 100%;
+    margin-top: 3.5rem;
+    transform: translateY(-50%);
+    border-color: gray;
+}
+
+.recipe-hr-separator{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 170%;
+    border-color: gray;
+    margin: 0;
+    z-index: 1;
+}
+.small_image_recipes_left{
+    width: 50%;
+    float: left;
+}
+
+.small_image_recipes_left img{
+    margin-top:1.3rem ;
+    width: 9rem;
+    height: 6rem;
+    border-radius: 5%;
+}
+
+.small_image_recipes_left p{
+    color: rgb(70, 70, 70);
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: -5.6rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    margin-left: 9.4rem;
+}
+
+.small_image_recipes_right{
+    width: 50%;
+    float: right;
+    margin-right: -1rem;
+}
+
+.small_image_recipes_right img{
+    margin-top:1.3rem ;
+    width: 9rem;
+    height: 6rem;
+    border-radius: 5%;
+}
+
+.small_image_recipes_right p{
+    color: rgb(70, 70, 70);
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: -5.6rem;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    margin-left: 9.4rem;
+}
+
+#chicken_recipes{
+    width: 100%;
+    position: absolute;
+    top: 108%;
+}
+
+#left_chicken_recipe{
+    width: 50%;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    float: left;
+}
+
+#left_chicken_recipe img{
+    width: 100%;
+}
+
+#left_chicken_recipe h3{
+    margin-top: 0.8rem;
+    font-size: 1.55rem;
+    line-height: 1.7rem;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+#right_chicken_recipe{
+    width: 50%;
+    float: right;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+}
+
+
+#right_chicken_recipe img{
+    width: 30%;
+    height: 5rem;
+    margin-left: 1.8rem;
+    margin-bottom: 1.3rem;
+}
+
+#right_chicken_recipe p{
+    width: 50%;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    float: right;
+    line-height: 1.7rem;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+#vegan_recipe{
+    width: 100%;
+    position: absolute;
+    top: 176%;
+}
+.vg_img{
+    width: 100%;
+}
+
+.img_para_head{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    font-size: 1.6rem;
+    float: right;
+    left: 10%;
+}
+
+.small_img_veg{
+    transition: transform .3s;
+}
+.small_img_veg:hover{
+    transform: scale(1.1);
+}
+
+#third_section{
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 415%;
+}
+
+.dessert_para{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: serif;
+    margin-top: 1rem;
+    color: #212529;
+}
+
+.dessert_para:hover{
+    color: blue;
+}
+
+.dessert_img{
+    width: 100%;
+    height: 17rem;
+}
+
+.dessert_author{
+    
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: serif;
+    line-height: 0.4rem;
+}
+
+.small_img_dessert:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#recent_recipes{
+    width: 20%;
+    float: right;
+    margin: 1.7rem 0 0 0;
+}
+
+#recent_post_1{
+    width: 100%;
+}
+
+#recent_post_1_para{
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: 1rem;
+    color: #212529;
+    line-height: 1.7rem;
+}
+
+#recent_post_1_para:hover{
+    color: blue;
+}
+
+#recent_post_1_para_2{
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: monospace;
+
+}
+
+.recent_recipe_small{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.small_recipe1{
+    width: 50%;
+    float: left;
+}
+
+.small_recipe_img{
+    width: 100%;
+    float: left;
+    height: 5rem;
+}
+
+.small_recipe_text{
+    margin-top: 1rem;
+    float: left;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    font-size: 1.1rem;
+    color: #212529;
+}
+
+.small_recipe_text:hover{
+    color: blue;
+    transform: translateX(3px);
+}
+.small_recipe2{
+    width: 50%;
+    margin-right: -1rem;
+    float: right;
+}
+
+.small_recipe_img2{
+    width: 100%;
+    float: right;
+    height: 5rem;
+}
+
+.small_recipe_text2{
+    margin-top: 1rem;
+    float: right;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    color: #212529;
+    font-size: 1rem;
+}
+
+.small_recipe_text2:hover{
+    color: blue;
+    transform: translateX(0.4px);
+}
+
+#social_connect{
+    position: absolute;
+    top: 108%;
+    width: 50%;
+    left: -50%;
+}
+
+.social_connect_content {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .social_icon1{
+      width: 50%;
+      float: left;
+  }
+
+  .social_icon2{
+    width: 50%;
+    float: right;
+}
+
+  .social_connect_content-facebook:hover {
+      opacity: 0.8;
+      cursor: pointer;
+      text-decoration: none;
+      background: #3B5998;
+      color: white;
+  }
+
+  .social_connect_content-facebook+h5:hover{
+    color: #3B5998;
+    cursor: pointer;
+  }
+
+  .social_connect_content-facebook{
+    /* background: #3B5998; */
+    background: #E6E6E6;
+    color: black;
+    float: left;
+    width: 2rem;
+    padding-left: 0.7rem;
+    padding-right: 1.4rem;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 50%;
+  }
+
+  .social_connect_content-twitter:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    text-decoration: none;
+    background: #55ACEE;
+    color: white;
+  }
+
+  .social_connect_content-twitter+h5:hover{
+    color: #55ACEE;
+    cursor: pointer;
+  } 
+  .social_connect_content-twitter{
+    /* background: #55ACEE; */
+    background: #E6E6E6;
+    color: black;
+    float: left;
+    width: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 1.7rem;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 50%;
+  }
+
+  .social_connect_content-google{
+    /* background: #dd4b39; */
+    background: #E6E6E6;
+    color: black;
+    float: left;
+    width: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 1.7rem;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 50%;
+  }
+
+  .social_connect_content-google:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    text-decoration: none;
+    background: #dd4b39;
+    color: white;
+  }
+
+  .social_connect_content-google+h5:hover{
+    color: #dd4b39;
+    cursor: pointer;
+  } 
+
+  .social_connect_content-youtube{
+    /* background: #bb0000; */
+    background: #E6E6E6;
+    color: black;
+    float: left;
+    width: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 1.7rem;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 50%;
+  }
+
+  .social_connect_content-youtube:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    text-decoration: none;
+    background: #bb0000;
+    color: white;
+  }
+
+  .social_connect_content-youtube+h5:hover{
+    color: #bb0000;
+    cursor: pointer;
+  }
+
+  .social_connect_content-instagram{
+    /* background: #125688; */
+    background: #E6E6E6;
+    color: black;
+    float: left;
+    width: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 1.7rem;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 50%;
+  }
+
+  .social_connect_content-instagram:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    text-decoration: none;
+    background-image:linear-gradient( #405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737, #FCAF45,#FFDC80);
+    color: white;
+  }
+
+  .social_connect_content-instagram+h5:hover{
+    background: -webkit-linear-gradient(#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#F77737, #FCAF45,#FFDC80);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+
+  .social_connect_content-pinterest{
+    /* background: #cb2027; */
+    background: #E6E6E6;
+    color: black;
+    float: left;
+    width: 2rem;
+    padding-left: 0.6rem;
+    padding-right: 1.7rem;
+    border: 1px solid rgb(97, 96, 96);
+    border-radius: 50%;
+  }
+
+  .social_connect_content-pinterest:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    text-decoration: none;
+    background: #cb2027;
+    color: white;
+  }
+
+  .social_connect_content-pinterest+h5:hover{
+    color: #cb2027;
+    cursor: pointer;
+  }
+
+  #newsletter{
+      position: absolute;
+      float: left;
+      top: 145%;
+      left: -50%;
+      width: 40%;
+  }
+
+  #contact-us{
+    position: absolute;
+    float: left;
+    top: 200%;
+    left: -50%;
+    width: 40%;
+  }
+
+  .on_social_media{
+      float: right;
+      width: 50%;
+      top: 112%;
+  }
+
+  #second_aside{
+      position: absolute;
+      float: right;
+      left: 80%;
+  }
+
+  .social_media_pics{
+      width: 100%
+  }
+  .sm_pic{
+      width:4.5rem;
+      height: 5.7rem;
+      margin-left: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+
+  #most_liked{
+      margin-top: 0.7rem;
+  }
+
+  #most_liked_content{
+      width: 100%;
+  }
+
+  most_liked_div1{
+      width: 100%;
+  }
+
+  #most_liked_pic1{
+      width: 100%;
+  }
+
+  #most_liked_para1{
+      margin-top: 1.2rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #212529;
+  }
+
+  #most_liked_para1:hover{
+    color: blue;
+  }
+
+  #most_liked_para2{
+      margin-top: -0.5rem;
+      font-size: 0.8rem;
+      font-weight: bold;
+  }
+
+  .most_liked_recipe_small{
+      width: 100%;
+      margin-top: 1.5rem;
+  }
+
+  .most_liked_small_recipe1{
+      width: 50%;
+      margin-left: -0.8rem;
+      display: inline-block;
+  }
+
+  .liked_small_recipe_img{
+    width: 100%;
+    height: 5rem;
+    float: left;
+    margin-bottom: 1rem;
+  }
+
+  .liked_small_recipe_text{
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;    
+      color: #212529
+}
+
+  .liked_small_recipe_text:hover{
+      color: blue;
+      cursor: pointer;
+  }
+
+  .most_liked_small_recipe2{
+      width: 50%;
+      float: right;
+  }
+
+  .liked_small_recipe_text2:hover{
+      color: blue;
+      cursor: pointer;
+  }
+
+  .liked_small_recipe_img2{
+      width: 100%;
+      height: 5rem;
+      float: right;
+  }
+
+  .liked_small_recipe_text2{
+      width: 100%;
+      float: right;
+      margin-top: 1rem;
+      color: #212529;
+  }
+
+.down_stuff{
+    display: none;
+    position: absolute;
+    top: 80%;
+    transform: translateX(-9.3%);
+    z-index: 10;
+    height: 15.5rem;
+    width: 100%;
+    background:#E6E6E6;
+}
+
+.down_stuff:hover{
+    display: block;
+}
+
+.down_seafood:hover + div{
+    display: block;
+    animation: increase linear 0.5s;
+}
+
+@keyframes increase{
+    0%  {
+        height: 0rem;
+    }
+
+    /* 50%{
+        height: 8rem;;
+    } */
+
+    100%{
+        height: 15.5rem;
+    }
+}
+
+.seafood_images{
+    width: 100%;
+}
+
+.seafood_img_content{
+    width: 19.7%;
+    display: inline-block;
+}
+
+.seafood1{
+    position: relative;
+    width: 100%;
+    height: 12rem;
+    margin-bottom: 1rem;
+}
+
+.seafood1_para{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: serif;
+    text-align: center;
+}
+
+.down_chicken:hover + div{
+    display: block;
+    animation: increase linear 0.3s;
+}
+
+.down_vegetarian:hover + div{
+    display: block;
+    animation: increase linear 0.5s;
+}
+
+.down_stuff_veg{
+    display: none;
+    position: absolute;
+    top: 80%;
+    transform: translateX(-9.3%);
+    z-index: 10;
+    height: 16.5rem;
+    width: 100%;
+    background:#E6E6E6;
+}
+
+.down_stuff_veg:hover{
+    display: block;
+}
+
+.editor_pick_anchor{
+    text-decoration: none;
+}
+
+.editor_pick_anchor:hover{
+    text-decoration: none;
+}
+.editor_pick_para:hover{
+    color: blue;
+    text-decoration: none;
+    transform: translateX(3px);
+}
+
+.chicken_sec{
+    color:#212529;
+}
+
+.chicken_sec:hover{
+    color: blue;
+    transform: translateX(3px);
+}
+
+.vegan_sec{
+    color:white;
+}
+
+.vegan_sec:hover{
+    color: lightgreen;
+    transform: translateX(3px);
+}
+
+.para_desc_search{
+    overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        text-align: justify;
+}

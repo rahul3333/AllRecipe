@@ -1,0 +1,534 @@
+<div class="container-fluid m-0 p-0">
+    <section id="first-section" class="m-0 p-0" style="display: inline-block; width: 100%;">
+        <div class="p-0 m-0" style="width: 66%;">
+           <a href="/users/show_recipe/Grilled Whole Butterflied Chickens" > <img src="/images/bg-img.jpg" alt="Grilled Chicken" style="object-fit: fill;height: 80%;width: 100%;">
+            <small style="z-index: 2; position: absolute;display: inline-block;color: white;top: 77%;left: 2%;">
+                <p style="font-size: 1.1rem;line-height: 0.2rem;">Chicken</p>
+                <p style="font-size: 1.7rem; font-weight: bold;">Grilled Whole Butterflied Chickens Easy Recipe</p>
+                <p style="font-size: 1.1rem;line-height: 0.2rem;">May 20 2020 |<%let obj = recipe.find(o => o.name === "Grilled Whole Butterflied Chickens");%>
+                    <%=obj.likes.length%> Likes</p>
+            </small>
+        </a>
+        </div>
+
+        <aside style="float: right;width: 33.6%;height: 80%;margin-top: -31.23rem;">
+            <div style="position: relative;width: 100%;height: 10%;margin-bottom: 7.36rem;">
+                <a href="/users/show_recipe/Japanese Style Authentic Chicken Teriyaki with Original Sauce"><img src="/images/teriyaki.jpg" alt="Teriyaki" style="width: 100%;height: 10.2rem;opacity: 1;">
+                <small style="z-index: 5;position: absolute;display: inline-block;color: white;left: 2%;top: 170%;">
+                <p style="font-size: 1.4rem; font-weight: bold;padding-left: 1rem;">Japanese Style Authentic Chicken Teriyaki with Original Sauce</p>                    
+                </small>
+            </a>
+            </div>
+            <div style="position: relative;width: 100%;height: 10%;margin-bottom: 7.36rem;">
+                <a href="/users/show_recipe/Mexican Casserole"><img src="/images/casserole2.jpeg" alt="Teriyaki" style="width: 100%;height: 10.2rem;opacity: 1;">
+                <small style="z-index: 5;position: absolute;display: inline-block;color: white;left: 2%;top: 210%;">
+                <p style="font-size: 1.5rem; font-weight: bold;padding-left: 1rem;">Mexican Casserole</p>                    
+                </small>
+            </a>
+            </div>
+            <div style="position: relative;width: 100%;height: 10%;">
+                <a href="/users/show_recipe/Indian Special Spicy Cholay"><img src="/images/cholay.jpeg" alt="Teriyaki" style="width: 100%;height: 10.2rem;opacity: 1;">
+                <small style="z-index: 5;position: absolute;display: inline-block;color: white;left: 2%;top: 210%;">
+                <p style="font-size: 1.5rem; font-weight: bold;padding-left: 1rem;">Indian Special Spicy Cholay</p>                    
+                </small>
+            </a>
+            </div>
+        </aside>
+        
+    </section>
+
+    <!-- -------------------------------------------------------------------- -->
+
+    <section id="second_section"  style="background-color: white;">
+        <aside id="editor_picks">
+            <h3>Editor's Pick</h3>
+            <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem;">
+                <div class="inline-block">
+                    <i class="fas fa-circle circle_icon"></i> 
+                </div>
+                <hr class="hr-separator ml-1" >
+            </div>
+
+            <div class="editor_recipe">
+                <img src="/images/PalakPaneer.jpeg" alt="Palak Paneer">
+                <a href="/users/show_recipe/Indian Special Palak Paneer" class="editor_pick_anchor"><p class="editor_pick_para">Indian Special Palak Paneer</p>
+            </a>
+            </div>
+            <hr class="editor-hr-separator">
+            
+            <div class="editor_recipe">
+                <img src="/images/tacos.jpg" alt="Tacos">
+                <a href="/users/show_recipe/Spicy Mexican Tacos" class="editor_pick_anchor"><p class="editor_pick_para">Spicy Mexican Tacos</p>
+                </a>
+            </div>
+            <hr class="editor-hr-separator" >
+            
+            <div class="editor_recipe">
+                <img src="/images/TurkeySausage.jpg" alt="TurkeySausage">
+                <a href="/users/show_recipe/Special Turkey Sausage with Hot Sauce" class="editor_pick_anchor"><p class="editor_pick_para">Special Turkey Sausage with Hot Sauce</p>
+                </a>
+            </div>
+            <hr class="editor-hr-separator" style="margin-top: 1.7rem;">
+            
+            <div class="editor_recipe">
+             <img src="/images/pancake.jpg" alt="Pancake">
+             <a href="/users/show_recipe/Pancakes" class="editor_pick_anchor"><p class="editor_pick_para">Some Pancakes for dessert</p>
+            </a>
+            </div>
+            <hr class="editor-hr-separator">
+            
+            <div class="editor_recipe">
+                <img src="/images/mangolassi.jpg" alt="Mango Lassi">
+                <a href="/users/show_recipe/Mango Lassi" class="editor_pick_anchor"><p class="editor_pick_para">Have Mango Lassi and Cool Down</p>
+                    </a>
+            </div>
+        </aside>
+        <!-- ---------------------------------------------------------------- -->
+        <div id="some_recipes">
+            <h3>Indian Recipes</h3>
+            <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                <div class="inline-block">
+                    <i class="fas fa-circle circle_icon"></i> 
+                </div>
+                <hr class="recipe-hr-separator">
+            </div>
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-2">
+                  <!-- Card1 -->
+                  <div class="card" id="card1">
+                    <div class="view overlay">
+                      <img class="card-img-top" src="/images/samosa.jpg"alt="Samosa">
+                      <!-- <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                      </a> -->
+                      <a type="button" href="/favorites/create/" class="btn-floating btn-lg"><i  class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title mt-n3">Samosa</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/users/show_recipe/Samosa" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
+                    </div>
+                  </div>
+                  <!-- Card1 ends -->
+                </div>
+
+                <div class="col mb-2">
+                  <!-- Card2 -->
+                  <div class="card" id="card2">
+                    <div class="view overlay">
+                      <img class="card-img-top" src="/images/chaap.jpeg"
+                        alt="Card image cap">
+                      <!-- <a href="#!">
+                        <div class="mask rgba-white-slight"></div>
+                      </a> -->
+                      <a type="button" class="btn-floating btn-lg"><i  class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a>
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title mt-n3">Tawa Chaap</h4>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="/users/show_recipe/Tawa Chaap" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
+                    </div>
+                  </div>
+                  <!-- Card2 ends -->
+                </div>
+                </div>
+
+                <!-- ---------------------Small Image Recipes---------------------- -->
+                <div class="small_image_recipe">
+                <div class="small_image_recipes_left">
+                    <img src="/images/shrimpcurry.jpg" alt="shrimpcurry" style="margin-bottom: 0.4rem;">
+                    <a href="/users/show_recipe/Mouth-watering Shrimp Curry" class="editor_pick_anchor"><p class="editor_pick_para">Mouth-watering Shrimp Curry</p>
+                    </a>
+                    <img src="/images/MasoorDal.jpg" alt="MasoorDal">
+                    <a href="/users/show_recipe/Masoor Dal" class="editor_pick_anchor"><p class="editor_pick_para">Exotic Masoor Dal</p>
+                    </a>
+                </div>
+
+                <div class="small_image_recipes_right">
+                    <img src="/images/SpinachQuiche.jpeg" alt="SpinachQuiche" style="margin-bottom: 0.4rem;">
+                    <a href="/users/show_recipe/Spinach Quiche" class="editor_pick_anchor"><p class="editor_pick_para">Healthy Spinach Quiche</p>
+                    </a>
+                    <img src="/images/haldikadoodh.jpg" alt="haldikadoodh">
+                    <a href="/users/show_recipe/Haldi Ka Doodh" class="editor_pick_anchor"><p class="editor_pick_para">Energetic Haldi Ka Doodh</p>
+                    </a>
+                </div>
+            </div>
+                <br>
+                <!-- -----------------------Chicken Recipes --------------------------- -->
+                <div id="chicken_recipes">
+                    <h3>Chicken Recipes</h3>
+                    <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                        <div class="inline-block">
+                            <i class="fas fa-circle circle_icon"></i> 
+                        </div>
+                        <hr class="recipe-hr-separator">
+                    </div>
+                    <div id="left_chicken_recipe">
+                        <img src="/images/ButterChicken.jpg" alt="Butter Chicken">
+                        <a href="/users/show_recipe/Butter Chicken" class="editor_pick_anchor">
+                            <h3 class="chicken_sec">
+                                How To Make The Best Butter Chicken
+                            </h3>
+                        </a>
+                        <p><%let obj3 = recipe.find(o => o.name === "Butter Chicken");%>By: <%=obj3.author%> | <%=obj3.likes.length%> Likes</p>
+                        <p>Butter Chicken or Murg Makhani is a dish, originating in the Indian subcontinent, of chicken in a mildly spiced tomato sauce.</p>
+                    </div>
+                    <div id="right_chicken_recipe">
+                        <div>
+                            <img src="/images/ChickenKabab.jpeg" alt="Chicken Kabab">
+                            <a href="/users/show_recipe/Rosemary Ranch Chicken Kababs" class="editor_pick_anchor">
+                                <p class="chicken_sec">Tasty and Spicy Chicken Kababs</p>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="/images/ChickenCordon.jpeg" alt="Chicken Cordon">
+                            <a href="/users/show_recipe/Chicken Cordon Bleu" class="editor_pick_anchor">
+                                <p class="chicken_sec">Cheesy Cheese <br> Chicken Cordon</p>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="/images/chickenmakhani.jpeg" alt="Chicken Makhani">
+                            <a href="/users/show_recipe/Chicken Makhani" class="editor_pick_anchor">
+                                <p class="chicken_sec">Special Gravy <br> Chicken Makhani</p>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="/images/RoastedChicken.jpg" alt="Roasted Chicken">
+                            <a href="/users/show_recipe/Roasted Chicken with Lemon Salad" class="editor_pick_anchor">
+                                <p class="chicken_sec">Roasted Chicken with Lemon Salad</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ---------------------------Social Connect---------------------- -->
+                <div id="social_connect">
+                    <h3>Social Connect</h3>
+                    <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                        <div class="inline-block">
+                            <i class="fas fa-circle circle_icon"></i> 
+                        </div>
+                        <hr class="recipe-hr-separator" style="margin-left: 0.5rem;">
+                    </div>
+                    <div class="social_connect_content">
+                        <div class="social_icon1">
+                            <a href="#" class="fa fa-facebook social_connect_content social_connect_content-facebook"></a>
+                            <h5 style="margin: 0.7rem 2.2rem 0 0;font-weight: bold;font-size: 0.8rem;" class="fb_head">FACEBOOK</h5> <br>
+
+                            <a href="#" class="fa fa-google social_connect_content social_connect_content-google"></a>
+                            <h5 style="margin: 0.7rem 3.2rem 0 0;font-weight: bold;font-size: 0.8rem;">GOOGLE</h5><br>
+
+                            <a href="#" class="fa fa-instagram social_connect_content social_connect_content-instagram"></a>
+                            <h5 style="margin: 0.6rem 1.5rem 0 0;font-weight: bold;font-size: 0.8rem;">INSTAGRAM</h5>
+                        </div>
+                        <div class="social_icon2">
+                            <a href="#" class="fa fa-twitter social_connect_content social_connect_content-twitter"></a>
+                            <h5 style="margin: 0.7rem 2.8rem 0 0;font-weight: bold;font-size: 0.8rem;">TWITTER</h5><br>
+
+                            <a href="#" class="fa fa-pinterest social_connect_content social_connect_content-pinterest"></a>
+                            <h5 style="margin: 0.7rem 2rem 0 0 ;font-weight: bold;font-size: 0.8rem;">PINTEREST</h5><br>
+
+                            <a href="#" class="fa fa-youtube social_connect_content social_connect_content-youtube"></a>
+                            <h5 style="margin: 0.7rem 2.6rem 0 0 ;font-weight: bold;font-size: 0.8rem;">YOUTUBE</h5>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- ---------------------------------Newsletter--------------------------------------- -->
+
+                <div id="newsletter">
+                    <h3>Subscribe Newsletter</h3>
+                    <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                        <div class="inline-block">
+                            <i class="fas fa-circle circle_icon"></i> 
+                        </div>
+                        <hr class="recipe-hr-separator" style="margin-left: 0.5rem;">
+                    </div>
+                
+                    <form class="text-center" action="#!">
+                        <p class="h4 mb-4">Subscribe</p>
+                        <p>Join our mailing list. We write rarely, but only the best content.</p>
+                        <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Name">
+                        <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <button class="btn btn-info btn-block" type="submit">Sign in</button>
+                    </form>
+                </div>
+                <!-- ----------------------------Contact Us-------------------------------- -->
+                <div id="contact-us">
+                    <h3>Contact Us</h3>
+                    <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                        <div class="inline-block">
+                            <i class="fas fa-circle circle_icon"></i> 
+                        </div>
+                        <hr class="recipe-hr-separator" style="margin-left: 0.5rem;">
+                    </div>
+                    <form class="text-center" action="#!">
+                        <p class="h4 mb-4">Please Fill the form to reach us</p>
+                        <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+                        <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+                        <label>Subject</label>
+                        <select class="browser-default custom-select mb-4">
+                            <option value="" disabled>Choose option</option>
+                            <option value="1" selected>Feedback</option>
+                            <option value="2">Report a bug</option>
+                            <option value="3">Recipe request</option>
+                            <option value="4">Join Us</option>
+                        </select>
+                        <div class="form-group">
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                        </div>
+                        <button class="btn btn-info btn-block" type="submit">Send</button>
+                        </form>
+                    </div>
+
+                <!-- ------------------Vegan Recipe----------------------------- -->
+
+                <div id="vegan_recipe">
+                    <h3>Vegan Recipes</h3>
+                    <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                        <div class="inline-block">
+                            <i class="fas fa-circle circle_icon"></i> 
+                        </div>
+                        <hr class="recipe-hr-separator">
+                    </div>
+                    <div id="vegan_images" class="row row-cols-1 row-cols-md-2">
+                        <div class="col mb-3">
+                            <div class="small_img_veg">
+                                <img src="/images/keemaAloo.jpeg" alt="keemaAloo" class="vg_img">
+                                <a href="/users/show_recipe/Keema Aloo" class="editor_pick_anchor">
+                                    <p class="img_para_head vegan_sec" style="top:55% ;">Indian Special Spicy <br> Keema Aloo</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col mb-2">
+                            <div class="small_img_veg">
+                                <img src="/images/vegan2.jpg" alt="vegan2" class="vg_img">
+                                <a href="/users/show_recipe/Butternut Squash with Chickpeas" class="editor_pick_anchor">
+                                    <p class="img_para_head vegan_sec" style="top:55% ;">Stuffed Butternut Squash with Chickpeas</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="small_img_veg">
+                                <img src="/images/vegan3.jpg" alt="vegan3" class="vg_img">
+                                <a href="/users/show_recipe/Ramen Noodle And Special Vegetable Soup" class="editor_pick_anchor">
+                                    <p class="img_para_head vegan_sec" style="top:55% ;">Ramen Noodle And Special Vegetable Soup</p>
+                                </a>
+                            
+                                </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="small_img_veg">
+                                <img src="/images/vegan4.jpg" alt="vegan4" class="vg_img">    
+                                <a href="/users/show_recipe/Butternut Squash and Beans Curry" class="editor_pick_anchor">
+                                    <p class="img_para_head vegan_sec" style="top:55% ;">Butternut Squash And Beans Curry</p>
+                                </a>
+                            
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="small_img_veg">
+                                <img src="/images/vegan5.jpg" alt="vegan5" class="vg_img">
+                                <a href="/users/show_recipe/Breaded Tofu Bites with a Ginger Peanut" class="editor_pick_anchor">
+                                    <p class="img_para_head vegan_sec" style="top:55% ;">Breaded Tofu Bites With a Ginger Peanut</p>
+                                </a>
+                            
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="small_img_veg">
+                                <img src="/images/vegan6.jpg" alt="vegan6" class="vg_img">
+                                <a href="/users/show_recipe/Vegan Soba Noodle with Carrots, Shitake Mushrooms" class="editor_pick_anchor">
+                                    <p class="img_para_head vegan_sec" style="top:55%;left: 5%;font-size: 1.4rem;">Vegan Soba Noodle with Carrots, Shitake Mushrooms</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+        <aside id="recent_recipes">
+            <h3>Recent Recipes</h3>
+                    <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                        <div class="inline-block">
+                            <i class="fas fa-circle circle_icon"></i> 
+                        </div>
+                        <hr class="recipe-hr-separator" style="margin-left: 0.5rem;">
+                    </div>
+                    <div class="recent_recipe1">
+                        <img src="/images/CucumberRaita.jpg" alt="Cucumber Raita" id="recent_post_1">
+                        <a href="/users/show_recipe/Cucumber Raita" class="editor_pick_anchor"> 
+                            <p id="recent_post_1_para" class="editor_pick_para">Have Some Cold and Healthy Cucumber Raita</p>
+                        </a>
+                        <p id="recent_post_1_para_2"><%let obj2 = recipe.find(o => o.name === "Cucumber Raita");%>By: <%=obj2.author%> | <%=obj2.likes.length%> Likes</p>
+                    </div>
+
+                    <div class="recent_recipe_small">
+                        <div class="small_recipe1">
+                            <img src="/images/wholechicken.jpg" alt="Whole Chicken" class="small_recipe_img"><br>
+                            <a href="/users/show_recipe/Roasted Chicken" class="editor_pick_anchor"> 
+                                <p class="small_recipe_text">Cast Iron Whole Roasted Chicken</p>
+                            </a>
+
+                            <img src="/images/shrimps.jpg" alt="Shrimps" class="small_recipe_img"><br>
+                            <a href="/users/show_recipe/Shrimps And Calamari Rings" class="editor_pick_anchor">
+                                <p class="small_recipe_text">Shrimps And Calamari Rings</p>
+                            </a>
+                        </div>
+                        <div class="small_recipe2">
+                            <img src="/images/bbqshrimp.jpg" alt="BBQ Shrimps" class="small_recipe_img2"><br>
+                            <a href="/users/show_recipe/Shrimps with Pasta" class="editor_pick_anchor">
+                                <p class="small_recipe_text2">BBQ Shrimp And Scallops with Pasta</p>
+                            </a>
+                            <img src="/images/bbqsteak.jpg" alt="BBQ Steak" class="small_recipe_img2"><br>
+                            <a href="/users/show_recipe/BBQ Steak Skewers" class="editor_pick_anchor">
+                                <p class="small_recipe_text2">BBQ Steak Skewers With Herbs</p>
+                            </a>
+                        </div>
+                    </div>
+        </aside>
+
+        <aside id="second_aside">
+                    <!-- -----------------On Social Media------------------ -->
+
+                    <div id="on_social_media" style="margin-top: 2rem;">
+                        <h3>On Social Media</h3>
+                        <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                            <div class="inline-block">
+                                <i class="fas fa-circle circle_icon"></i> 
+                            </div>
+                            <hr class="recipe-hr-separator" style="margin-left: 0.5rem;">
+                        </div>
+
+                        <div class="social_media_pics">
+                            <img src="/images/wholechicken.jpg" class="sm_pic" alt="wholechicken">
+                            <img src="/images/harvest.jpg" class="sm_pic" alt="harvest">
+                            <img src="/images/SpinachQuiche.jpeg" class="sm_pic" alt="SpinachQuiche">
+                            <img src="/images/shrimps.jpg" class="sm_pic" alt="shrimps">
+                            <img src="/images/vegan3.jpg" class="sm_pic" alt="vegan3">
+                            <img src="/images/tacos.jpg" class="sm_pic" alt="Tacos">
+                            <img src="/images/pancake.jpg" class="sm_pic" alt="pancake">
+                            <img src="/images/samosa.jpg" class="sm_pic" alt="Samosa">
+                            <img src="/images/chocolatemousse.jpg" class="sm_pic" alt="Chocolate Mousse">
+                            <img src="/images/ChickenKabab.jpeg" class="sm_pic" alt="Chicken Kabab ">
+                            <img src="/images/Cholay.jpeg" class="sm_pic" alt="Cholay">
+                            <img src="/images/hazelnutbrownies.jpg" class="sm_pic" alt="Brownies">
+                        </div>
+                    </div>
+
+                    <!-- -----------------------Most Liked recipes--------------------- -->
+                    <div id="most_liked">
+                        <h3>Most Liked Recipes</h3>
+                        <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+                            <div class="inline-block">
+                                <i class="fas fa-circle circle_icon"></i> 
+                            </div>
+                            <hr class="recipe-hr-separator" style="margin-left: 0.5rem;">
+                        </div>
+                        <div id="most_liked_content">
+                            <div class="most_liked_div1">
+                                <img src="/images/mangolassi.jpg" alt="Mango Lassi" id="most_liked_pic1">
+                                <a href="/users/show_recipe/Mango Lassi" class="editor_pick_anchor">
+                                    <p id="most_liked_para1">Chilled Mango Lassi</p>
+                                </a>
+                                <p id="most_liked_para2"><%let obj4 = recipe.find(o => o.name === "Mango Lassi");%>By: <%=obj4.author%> | <%=obj4.likes.length%> Likes</p>
+                            </div>
+                        </div>
+
+                        <div class="most_liked_recipe_small">
+                            <div class="most_liked_small_recipe1">
+                                <img src="/images/wholechicken.jpg" alt="Whole Chicken" class="liked_small_recipe_img"><br>
+                                <a href="/users/show_recipe/Roasted Chicken" class="editor_pick_anchor"> 
+                                    <p class="liked_small_recipe_text">Cast Iron Whole Roasted Chicken</p>
+                                </a>
+                                <img src="/images/shrimps.jpg" alt="Shrimps" class="liked_small_recipe_img"><br>
+                                <a href="/users/show_recipe/Shrimps And Calamari Rings" class="editor_pick_anchor">
+                                    <p class="liked_small_recipe_text">Shrimps And Calamari Rings</p>
+                                </a>
+                            </div>
+
+                            <div class="most_liked_small_recipe2">
+                                <img src="/images/bbqshrimp.jpg" alt="BBQ Shrimps" class="liked_small_recipe_img2"><br>
+                                <a href="/users/show_recipe/Shrimps with Pasta" class="editor_pick_anchor">
+                                    <p class="liked_small_recipe_text2">BBQ Shrimp And Scallops with Pasta</p>
+                                </a>
+                                <img src="/images/bbqsteak.jpg" alt="BBQ Steak" class="liked_small_recipe_img2"><br>
+                                <a href="/users/show_recipe/BBQ Steak Skewers" class="editor_pick_anchor">
+                                    <p class="liked_small_recipe_text2" style="font-size: 0.98rem;">BBQ Steak Skewers With Herbs</p>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+        </aside>
+    </section>
+
+    <section id="third_section">
+        <h3>Desserts</h3>
+        <div class="row icon-separator" style="margin-top: -0.5rem;margin-bottom: 1.2rem; width: 50%;">
+            <div class="inline-block">
+                <i class="fas fa-circle circle_icon"></i> 
+            </div>
+            <hr class="recipe-hr-separator">
+        </div>  
+
+        <div class="row row-cols-1 row-cols-md-3 ">
+            <div class="col mb-3">
+                <div class="small_img_dessert">
+                    <img src="/images/CheeseCake.jpeg" alt="cheese cake" class="dessert_img">
+                    <a href="/users/show_recipe/Cheese Cake" class="editor_pick_anchor">
+                        <p class="dessert_para">How to make the best Cheese Cake</p>
+                    </a>
+                    <p class="dessert_author"><%let obj5 = recipe.find(o => o.name === "Cheese Cake");%>By: <%=obj5.author%></p>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="small_img_dessert">
+                    <img src="/images/ChocolateCake.jpeg" alt="chocolate cake" class="dessert_img">
+                    <a href="/users/show_recipe/Chocolate Cake" class="editor_pick_anchor">
+                        <p class="dessert_para">Choco Burst Chocolate Cake</p>
+                    </a>
+                    <p class="dessert_author"><%let obj6 = recipe.find(o => o.name === "Chocolate Cake");%>By: <%=obj6.author%></p>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="small_img_dessert">
+                    <img src="/images/muffin.jpeg" alt="Muffin" class="dessert_img">
+                    <a href="/users/show_recipe/Blueberry Muffins" class="editor_pick_anchor">
+                        <p class="dessert_para">Blueberry Muffin</p>
+                    </a>
+                    <p class="dessert_author"><%let obj7 = recipe.find(o => o.name === "Blueberry Muffins");%>By: <%=obj7.author%></p>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="small_img_dessert">
+                    <img src="/images/puddingcaramel.jpg" alt="Pudidng" class="dessert_img">
+                    <a href="/users/show_recipe/Bread Pudding with Caramel" class="editor_pick_anchor">
+                        <p class="dessert_para">Bread Pudding with Caramel</p>
+                    </a>
+                    <p class="dessert_author"><%let obj8 = recipe.find(o => o.name === "Bread Pudding with Caramel");%>By: <%=obj8.author%></p>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="small_img_dessert">
+                    <img src="/images/hazelnutbrownies.jpg" alt="hazelnut brownies" class="dessert_img">
+                    <a href="/users/show_recipe/Chocolate & Hazelnut Brownies" class="editor_pick_anchor">
+                        <p class="dessert_para">Chocolate & Hazelnut Brownies</p>
+                    </a>
+                    <p class="dessert_author"><%let obj9 = recipe.find(o => o.name === "Chocolate & Hazelnut Brownies");%>By: <%=obj9.author%></p>
+                </div>
+            </div>
+            <div class="col mb-3">
+                <div class="small_img_dessert">
+                    <img src="/images/chocolatemousse.jpg" alt="chocolate mousse" class="dessert_img">
+                    <a href="/users/show_recipe/Classic Chocolate Mousse" class="editor_pick_anchor">
+                        <p class="dessert_para">Classic Chocolate Mousse</p>
+                    </a>
+                    <p class="dessert_author"><%let obj10 = recipe.find(o => o.name === "Classic Chocolate Mousse");%>By: <%=obj10.author%></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

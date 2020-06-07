@@ -1,0 +1,180 @@
+#page_signin{
+    position: absolute;
+width: 1366px;
+height: 768px;
+top: -6rem;
+background: url('/images/bg1.jpeg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#sign_in_form{
+    position: absolute;
+    width: 443.18px;
+    height: 521.48px;
+    left: 84px;
+    top: 12%;
+}
+
+#email_text_signin{
+    position: absolute;
+    width: 349px;
+    height: 47.64px;
+    left: 93px;
+    top: 161.91px;
+    background-color: transparent;
+    border: 7px solid #8D5058;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+#password_text_signin{
+position: absolute;
+width: 349px;
+height: 47.64px;
+left: 93px;
+top: 283.88px;
+background: transparent;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+border: 7px solid #8D5058;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+#password_para_signin{
+    position: absolute;
+width: 142.43px;
+height: 38.57px;
+left: 93px;
+top: 244.97px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+
+#email_para_signin{
+    position: absolute;
+width: 90.16px;
+height: 38.91px;
+left: 93px;
+top: 123px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+
+.signin_submit{
+    position: absolute;
+width: 349px;
+height: 57.97px;
+left: 93px;
+top: 386.7px;
+
+background: #8D5058;
+border: 3px solid #8D5058;
+box-sizing: border-box;
+border-radius: 22px;
+}
+
+.submit_span{
+    position: absolute;
+    width: 349px;
+    height: 61.59px;
+    left: 38%;
+    top: -10%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+#register_para{
+    position: absolute;
+width: 371px;
+height: 41px;
+left: 31%;
+top: 486px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 36px;
+
+color: #FFFFFF;
+}
+
+#register_anchor{
+    color: white;
+    text-decoration: none;
+}
+
+#register_anchor:hover{
+    background: -webkit-linear-gradient(#ffffff,#BE051D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#auth_signin{
+    position: absolute;
+width: 197px;
+height: 40px;
+left: 180px;
+top: 527px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 39px;
+
+color: #FFFFFF;
+
+}
+
+.twitter_signin{
+    position: absolute;
+width: 40.58px;
+height: 37.48px;
+left: 311.31px;
+top: 590px;
+}
+
+.google_signin{
+    position: absolute;
+width: 40.58px;
+height: 36.66px;
+left: 123px;
+top: 590px;
+}
+
+.fb_signin{
+    position: absolute;
+width: 40.58px;
+height: 36.66px;
+left: 217.16px;
+top: 590px;
+}

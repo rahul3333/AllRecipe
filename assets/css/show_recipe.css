@@ -7,9 +7,9 @@
 
 .icon-separator{
     position: relative;
-    color: gray;
     width: 60%;
     margin-top: 2rem;
+    color: rgb(231, 156, 26);
 }
 
 .hr-separator{
@@ -125,4 +125,12 @@
     border-radius: 2em 2em 2em 2em;
     letter-spacing: 0.075rem !important; 
     font-size: 0.82rem !important;
+}
+
+.black_icon{
+    color:black;
+}
+
+.red_icon{
+    color: red;
 }

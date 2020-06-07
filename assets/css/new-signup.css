@@ -1,0 +1,301 @@
+#page{
+    background: url('/images/bg2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#discover_para{
+    position: absolute;
+width: 412px;
+height: 56px;
+left: 38%;
+top: 56px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 54px;
+display: flex;
+align-items: center;
+text-align: center;
+background: -webkit-linear-gradient(#ffffff,#BE051D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+#signup_form{
+    position: absolute;
+width: 774px;
+height: 437.59px;
+left: 25%;
+top: 140px;
+}
+
+#first_name{
+    position: absolute;
+    width: 142px;
+    height: 39px;
+    left: 10%;
+    top: 0%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}
+
+#last_name{
+    position: absolute;
+    width: 142px;
+    height: 39px;
+    left: 50%;
+    top: 0%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}
+
+#email_para{
+    position: absolute;
+    width: 90.16px;
+    height: 38.91px;
+    left:10%;
+    top: 25%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}
+
+#password_para{
+    position: absolute;
+width: 142.43px;
+height: 38.57px;
+left: 50%;
+top: 25%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+
+#confirm_password_para{
+    position: absolute;
+    width: 225px;
+    height: 39px;
+    left:10%;
+    top: 55%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #FFFFFF;
+}
+
+#phone_para{
+    position: absolute;
+width: 181px;
+height: 39px;
+left: 50%;
+top: 55%;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+
+color: #FFFFFF;
+}
+
+#first_name_text{
+    position: absolute;
+width: 250px;
+height: 47.64px;
+left:10%;
+top: 10%;
+background: transparent;
+border: 7px solid #8D5058;
+box-sizing: border-box;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+
+}
+
+#last_name_text{
+    position: absolute;
+width: 250px;
+height: 47.64px;
+left: 50%;
+top: 10%;
+background: transparent;
+border: 7px solid #8D5058;
+box-sizing: border-box;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+
+}
+
+#email_text{
+    position: absolute;
+width: 250px;
+height: 47.64px;
+left: 10%;
+top: 35%;
+background: transparent;
+border: 7px solid #8D5058;
+box-sizing: border-box;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+
+}
+
+#password_text{
+    position: absolute;
+width: 250px;
+height: 47.64px;
+left: 50%;
+top: 35%;
+background: transparent;
+border: 7px solid #8D5058;
+box-sizing: border-box;
+border-radius: 10px;
+color: white;
+font-weight: bold;
+font-size: 1rem;
+}
+
+#confirm_password_text{
+    position: absolute;
+    width: 250px;
+    height: 47.64px;
+    left: 10%;
+    top: 65%;
+    background: transparent;
+    border: 7px solid #8D5058;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+#phone_text{
+    position: absolute;
+    width: 250px;
+    height: 47.64px;
+    left: 50%;
+    top: 65%;
+    background: transparent;
+    border: 7px solid #8D5058;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.signup_submit{
+    position: absolute;
+    width: 349px;
+    height: 57.97px;
+    left: 25%;
+    top: 85%;
+    
+    background: #8D5058;
+    border: 3px solid #8D5058;
+    box-sizing: border-box;
+    border-radius: 22px;
+}
+
+.signup_submit_span{
+    position: absolute;
+    width: 349px;
+    height: 61.59px;
+    left: 37%;
+    top: -10%;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.vl{
+    position: absolute;
+    border-left: 3px solid;
+    border-image:linear-gradient(#BE051D,#8D5058,#ffffff)1 100%;
+    height: 24rem;
+    top: 20%;
+    left: 78%;
+}
+.v1{
+    position: absolute;
+    top: -50%;
+    left: 72%;
+}
+
+#already_para{
+    position: absolute;
+    top: 57%;
+    left: 84%;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#already_anchor{
+    position: relative;
+    margin-left: 1.6rem;
+}
+
+#already_anchor:hover{
+    background: -webkit-linear-gradient(#ffffff,#BE051D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}

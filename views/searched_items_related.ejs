@@ -1,0 +1,40 @@
+<div class="container-fluid text-monospace">
+    <section style="background-image: linear-gradient(#F4F4F4,#F7F7F7,#FBFBFB, #FDFDFD); text-align: center;">
+    <div style="color: #4D4D4D">
+        <h2 style="line-height: 2.4rem;">We couldn't figure out what exactly you want,So Here are some suggestions... </h2>
+    </div>
+    </section>
+    <div class="row row-cols-4 row-cols-md-4 d-flex">
+    <% for (r of record){%> 
+        <div class="col mb-4 d-flex">
+        <!-- Dynamic Card Begins -->
+        <div class="card" id="card_dynamic">
+    
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="<%=r.photo%>" onerror=this.src="/images/getImage.jpeg">
+            <!-- <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a> -->
+            <!-- <a type="button" class="toggle-like-button btn-floating btn-lg" data-likes="<%= r.likes.length %>" href="/likes/toggle/?id=<%=r._id%>&type=Recipe"><i class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 30px;"></i></a> -->
+          <!-- href="/favorites/create/<%=r._id%> -->
+          </div>
+    
+          <!--Card content-->
+          <div class="card-body">
+    
+            <!--Title-->
+            <h4 class="card-title"><%= r.name%></h4>
+            <!--Text-->
+            <p class="card-text para_desc_search" style="font-size: 1.1rem;color: black;font-family: serif;font-weight: bold;"><%= r.description%></p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="/users/show_recipe/<%= r.name%>" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
+    
+          </div>
+    
+        </div>
+        </div>
+        <%}%>
+        <!-- Dynamic Card Ends -->
+      </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="container-fluid text-monospace">
+    <section style="background-image: linear-gradient(#F4F4F4,#F7F7F7,#FBFBFB, #FDFDFD); text-align: center;">
+        <div style="color: #4D4D4D">
+            <h2 style="line-height: 2.4rem;">Here's the recipe you are looking for, Enjoy Cooking... </h2>
+        </div>
+    <div class="row row-cols-4 row-cols-md-4">
+    <% for (r of recipe){%> 
+        <div class="col mb-4">
+        <!-- Dynamic Card Begins -->
+        <div class="card" id="card_dynamic">
+    
+          <!--Card image-->
+          <div class="view overlay">
+            <img class="card-img-top" src="<%=r.photo%>" alt="Card image cap">
+            <!-- <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a> -->
+          </div>
+    
+          <!--Card content-->
+          <div class="card-body">
+    
+            <!--Title-->
+            <h4 class="card-title"><%= r.name%></h4>
+            <!--Text-->
+            <p class="card-text"><%= r.description%></p>
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <a href="/users/show_recipe/<%= r.name%>" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
+    
+          </div>
+    
+        </div>
+        </div>
+        <%}%>
+        <!-- Dynamic Card Ends -->
+      </div>
+    </div>
+</section>
+</div>

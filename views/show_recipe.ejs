@@ -1,5 +1,5 @@
 <div class="container-fluid p-5 text-monospace">
-    <h2 style="text-transform: capitalize;">Chef <%= recipe.author%>'s <%= recipe.name%></h2>
+    <h2 style="text-transform: capitalize;">Chef <%= recipe.author%>'s <%= recipe.name%> Recipe</h2>
     <div class="description_div">
         <h5 class="mt-4"><%=recipe.description%></h5>
     </div>
@@ -17,6 +17,11 @@
             <img src="/images/getImage.jpeg" alt="Recipe's Image" style="overflow: hidden;;margin-top: -1.5rem;border-radius: 5%;position: relative;width: 95%;height:100% ;">            
             <%}%>
     </div>
+    <div class="likes-class" style="font-weight: bold;display: inline-block;">
+        <p class="ml-4 mb-n3"> <%= recipe.likes.length%> Likes<a type="button" class="toggle-like-button btn-floating btn-lg" data-likes="<%= recipe.likes.length %>" href="/likes/toggle/?id=<%=recipe._id%>&type=Recipe" style="margin-left: -0.6rem;margin-top: 0.5rem;margin-bottom: -1rem;"><i class="fas fa-heart heart_icon black_icon" aria-hidden="true" style="font-size: 25px" id="h_icon"></i></a>
+        </p>
+    </div>
+    <a type="button" class="btn btn-danger btn-md mt-3" href="/favorites/create/<%=recipe._id%>" style="margin-left: 11rem;font-weight: bold;font-size: 0.8rem;">Add to Favorites</a>
     <div class="row icon-separator">
         <div class="inline-block">
             <i class="fas fa-circle circle_icon"></i> 

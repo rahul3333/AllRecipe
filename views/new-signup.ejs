@@ -1,0 +1,29 @@
+<div class="container-fluid" id="page">
+    <p id="discover_para">Discover New Recipes</p>
+    <form action="/users/create_entry" method="post" id="signup_form">
+        <p id="first_name">First Name: </p>
+        <input type="text" name="name" id="first_name_text" required>
+        <p id="last_name">Last Name:</p>
+        <input type="text" id="last_name_text">
+        <p id="email_para">Email:</p>
+        <input type="text" name="email" id="email_text" required>
+        <p id="password_para">Password:</p>
+        <input type="password" name="password" id="password_text" minlength="8" maxlength="12" required>
+        <p id="confirm_password_para">Confirm Password:</p>
+        <input type="password" name="confirm_password" id="confirm_password_text" required>
+        <p id="phone_para">Phone Number:</p>
+        <input type="text" name="phone" id="phone_text" minlength="10" maxlength="10" required>
+        <button type="submit" class="signup_submit"><span class="signup_submit_span">Sign Up</span> </button>
+    </form>
+
+    <div class="vl"></div>
+    
+    <div class="v1">
+        <p id="auth_signin">or sign in with: </p>
+        <a href="/users/auth/google"><img src="/images/search.png" alt="" class="google_signin"></a>
+        <a href="/users/auth/facebook"><img src="/images/facebook (1).png" alt="" class="fb_signin"></a>
+        <img src="/images/twitter.png" alt="" class="twitter_signin">
+        </div>
+        <p id="already_para">Already a member?<br><a href="/users/signin" id="already_anchor"> Sign-In here</a></p>
+    
+</div>

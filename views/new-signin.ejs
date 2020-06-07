@@ -1,0 +1,15 @@
+<div class="container-fluid m-0 mt-n5 p-0" id="page_signin">
+    <form action="/users/create_session" method="POST" id="sign_in_form">
+        <p id="email_para_signin">Email: </p>
+        <input type="text" name="email" id="email_text_signin">
+        <p id="password_para_signin">Password:</p>
+        <input type="password" name="password" id="password_text_signin">
+
+        <button type="submit" class="signin_submit"><span class="submit_span">Sign In</span> </button>
+        <p id="register_para">Not a member?<a href="/users/signup" id="register_anchor"> Register here</a></p>
+        <p id="auth_signin">or sign in with: </p>
+        <a href="/users/auth/google"><img src="/images/search.png" alt="" class="google_signin"></a>
+        <img src="/images/facebook (1).png" alt="" class="fb_signin">
+        <img src="/images/twitter.png" alt="" class="twitter_signin">
+    </form>
+</div>

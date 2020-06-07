@@ -5,9 +5,9 @@
         <h6 style="margin-left: 2rem;line-height: 2.4rem;font-size: 1.3rem;">Your Own Twist Of Taste, Your Hardwork, Everything</h6>
         <h2 style="margin-left: 18rem;">Keep Cooking!!!</h2><br>
     </div>
-    <div class="row row-cols-4 row-cols-md-4">
+    <div class="row row-cols-4 row-cols-md-4 d-flex">
     <% for (r of recipe){%> 
-        <div class="col mb-4">
+        <div class="col mb-4 d-flex">
         <!-- Dynamic Card Begins -->
         <div class="card" id="card_dynamic">
     
@@ -17,7 +17,7 @@
             <!-- <a href="#!">
               <div class="mask rgba-white-slight"></div>
             </a> -->
-            <a type="button" class="btn-floating btn-lg"><i class="fas fa-heart" aria-hidden="true" style="font-size: 30px;"></i></a>
+            <!-- <a type="button" class="btn-floating btn-lg"><i class="fas fa-heart" aria-hidden="true" style="font-size: 30px;"></i></a> -->
           </div>
     
           <!--Card content-->
@@ -26,7 +26,7 @@
             <!--Title-->
             <h4 class="card-title"><%= r.name%></h4>
             <!--Text-->
-            <p class="card-text"><%= r.description%></p>
+            <p class="card-text" style="font-weight: bold;"><%= r.description%></p>
             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
             <a href="/users/show_recipe/<%= r.name%>" type="button" class="btn btn-light-blue btn-md">Read Recipe</a>
     
